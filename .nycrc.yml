@@ -1,0 +1,29 @@
+# .nycrc.yml
+
+# 指定需要覆盖率分析的文件和文件夹
+include:
+  - "lib/**/*.js"
+
+# 排除不需要覆盖率分析的文件和文件夹
+exclude:
+  - "test/**/*.js"
+  - "node_modules/**/*"
+
+# 报告器配置
+reporter:
+  - text
+  - text-summary
+  - lcov
+
+# 阈值配置，用于检查覆盖率是否达到预期值
+check-coverage: true
+lines: 1
+statements: 1
+branches: 1
+functions: 1
+
+# 是否收集未被测试覆盖的文件
+all: true
+
+# 设置 Istanbul 使用的目录，用于存储覆盖率信息
+cache: true

@@ -1,0 +1,10 @@
+# hidden config files
+.editorconfig
+.eslintignore
+.eslintrc.yml
+.nycrc.yml
+
+*.html
+
+# test directory
+test
