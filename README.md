@@ -20,8 +20,6 @@ npm install @taketo/logging --save
 
 ## Usage
 
-### Custom Logging Configuration
-
 1. Create a new configuration file `logging.yml` or `logging.yaml` in the project's root directory.
 
 2. Fill in the configuration file with your custom settings.
