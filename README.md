@@ -1,6 +1,6 @@
 # Logging
 
-A self used logging framework.
+Logging becomes effortless and efficient.
 
 ## Features
 
@@ -15,7 +15,7 @@ A self used logging framework.
 ## Installation
 
 ```bash
-npm install self-logging --save
+npm install auto-logging --save
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ npm install self-logging --save
       template: "%timestamp%%level%%label%%module%%message%%metadata%"
       formats:
         timestamp: "YYYY.MM.DD-HH:mm:ss.SSS ZZ"
-        label: logging
+        label: auto-logging
         json: false
         pad: true
         align: false
@@ -111,10 +111,7 @@ npm install self-logging --save
     Example in Node.js:
 
     ```javascript
-    const LoggingFactory = require('@taketo/logging');
-
-    // Use the LoggingFactory to configure and create loggers
-    const logger = LoggingFactory.getLogger('name');
+    const logger = require('auto-logging').getLogger('name');
     ```
 
 4. Use the logger to print logs in your code.
@@ -148,7 +145,7 @@ logging:
     # Adds a timestamp to the messages with the following format
     timestamp: "YYYY.MM.DD-HH:mm:ss.SSS"
     # Adds a specified label to every message. Useful for distributed workers scenario
-    label: logging
+    label: auto-logging
     # serializes the log messages as JSON
     json: false
     # pads the levels to be the same length

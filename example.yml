@@ -2,7 +2,7 @@ logging:
   template: "%timestamp%%level%%label%%module%%message%%metadata%"
   formats:
     timestamp: "YYYY.MM.DD-HH:mm:ss.SSS ZZ"
-    label: logging
+    label: auto-logging
     json: false
     pad: true
     align: false

@@ -1,7 +1,7 @@
 {
-    "name": "self-logging",
+    "name": "auto-logging",
     "version": "1.0.0",
-    "description": "A self used logging framework.",
+    "description": "Logging becomes effortless and efficient.",
     "main": "index.js",
     "scripts": {
         "test": "npm run lint && npm run nyc",
@@ -9,6 +9,7 @@
         "nyc": "nyc mocha --recursive -t 10000"
     },
     "keywords": [
+        "auto",
         "logging"
     ],
     "engines": {
@@ -17,7 +18,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://gitee.com/take-to/logging.git"
+        "url": "https://gitee.com/take-to/auto-logging.git"
     },
     "publishConfig": {
         "access": "public",

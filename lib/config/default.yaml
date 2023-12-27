@@ -8,7 +8,7 @@ logging:
     # Adds a timestamp to the messages with the following format
     timestamp: "YYYY.MM.DD-HH:mm:ss.SSS"
     # Adds a specified label to every message. Useful for distributed workers scenario
-    label: logging
+    label: auto-logging
     # serializes the log messages as JSON
     json: false
     # pads the levels to be the same length
