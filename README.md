@@ -1,4 +1,4 @@
-# Logging
+# Auto-Logging
 
 Logging becomes effortless and efficient.
 
