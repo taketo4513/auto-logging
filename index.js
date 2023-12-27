@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports.LoggingFactory = require('./lib/logging-factory');
+module.exports = require('./lib/logging-factory');

@@ -15,7 +15,7 @@ A self used logging framework.
 ## Installation
 
 ```bash
-npm install @taketo/logging --save
+npm install self-logging --save
 ```
 
 ## Usage
@@ -28,83 +28,82 @@ npm install @taketo/logging --save
 
     ```yaml
     # Logging Configuration
-
     logging:
-    template: "%timestamp%%level%%label%%module%%message%%metadata%"
-    formats:
+      template: "%timestamp%%level%%label%%module%%message%%metadata%"
+      formats:
         timestamp: "YYYY.MM.DD-HH:mm:ss.SSS ZZ"
         label: logging
         json: false
         pad: true
         align: false
         attributeformat:
-        level: " %attribute%"
-        label: " [%attribute%]"
-        module: " [%attribute%] "
-        metadata: " (%attribute%)"
+          level: " %attribute%"
+          label: " [%attribute%]"
+          module: " [%attribute%] "
+          metadata: " (%attribute%)"
         colorize:
-        all: true
-        colors:
+          all: true
+          colors:
             info: green
             error: red
             warn: yellow
             debug: grey
-    targets:
+      targets:
         console:
-        target: console
-        enabled: true
-        options:
+          target: console
+          enabled: true
+          options:
             level: info
         file:
-        target: file
-        enabled: true
-        options:
+          target: file
+          enabled: true
+          options:
             level: warn
             filename: "logging.log"
         rotatingInfo:
-        target: daily-rotate-file
-        enabled: true
-        options:
+          target: daily-rotate-file
+          enabled: true
+          options:
             level: info
             datePattern: "YYYY-MM-DD"
             zippedArchive: true
             filename: "logs/%DATE%/info.log"
             options:
-            flags: a
-            mode: 0666
+              flags: a
+              mode: 0666
         rotatingDebug:
-        target: daily-rotate-file
-        enabled: true
-        options:
+          target: daily-rotate-file
+          enabled: true
+          options:
             level: debug
             datePattern: "YYYY-MM-DD"
             zippedArchive: true
             filename: "logs/%DATE%/debug.log"
             options:
-            flags: a
-            mode: 0666
+              flags: a
+              mode: 0666
         rotatingWarn:
-        target: daily-rotate-file
-        enabled: true
-        options:
+          target: daily-rotate-file
+          enabled: true
+          options:
             level: warn
             datePattern: "YYYY-MM-DD"
             zippedArchive: true
             filename: "logs/%DATE%/warn.log"
             options:
-            flags: a
-            mode: 0666
+              flags: a
+              mode: 0666
         rotatingError:
-        target: daily-rotate-file
-        enabled: true
-        options:
+          target: daily-rotate-file
+          enabled: true
+          options:
             level: error
             datePattern: "YYYY-MM-DD"
             zippedArchive: true
             filename: "logs/%DATE%/error.log"
             options:
-            flags: a
-            mode: 0666
+              flags: a
+              mode: 0666
     ```
 
 3. Import the `LoggingFactory` package in your project.
