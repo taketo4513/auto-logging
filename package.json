@@ -18,7 +18,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://gitee.com/take-to/auto-logging.git"
+        "url": "https://github.com/taketo4513/auto-logging.git"
     },
     "publishConfig": {
         "access": "public",
